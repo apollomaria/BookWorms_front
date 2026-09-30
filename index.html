@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookworms — Fórum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="index.html" class="topbar-logo-link">
+        <img src="img/logo.jpeg" alt="Bookworms" class="logo-img">
+        <span class="logo">Bookworms</span>
+      </a>
+    </div>
+    <div class="topbar-right">
+      <button class="btn-criar-post">Criar Post</button>
+      <img src="img/avatar.jpg" alt="Perfil do usuário" class="avatar avatar--md profile-avatar-img">
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- SIDEBAR ESQUERDA -->
+    <aside class="sidebar sidebar--left">
+      <nav class="nav-group">
+        <a href="#" class="nav-link">Dar Apoio</a>
+        <a href="index.html" class="nav-link nav-link--strong">Página Inicial</a>
+        <a href="criar-clube.html" class="nav-link nav-link--strong">Criar Clube</a>
+        <a href="entrar-clube.html" class="nav-link nav-link--strong">Entrar em Clube</a>
+      </nav>
+
+      <hr class="divider">
+
+      <nav class="nav-group">
+        <a href="criar-registro.html" class="nav-link nav-link--strong">Criar Registro de Leitura</a>
+        <a href="#" class="nav-link nav-link--strong">Estatísticas</a>
+        <a href="metas.html" class="nav-link nav-link--strong">Metas</a>
+        <a href="testes.html" class="nav-link nav-link--strong">Testes</a>
+      </nav>
+
+      <hr class="divider">
+
+      <div class="nav-group">
+        <button class="nav-collapse" id="forunsToggle" aria-expanded="true" aria-controls="forunsList">
+          <span class="nav-link--strong">Fóruns</span>
+          <span class="chevron">⌄</span>
+        </button>
+        <div class="foruns-list" id="forunsList">
+          <a href="#" class="forum-link"><img src="img/NormalPeople.jpg" alt="bw/NormalPeople" class="avatar avatar--sm forum-avatar-img">bw/NormalPeople</a>
+          <a href="#" class="forum-link"><img src="img/SenhorDosAneis.jpg" alt="bw/SenhorDosAneis" class="avatar avatar--sm forum-avatar-img">bw/SenhorDosAneis</a>
+          <a href="#" class="forum-link"><img src="img/memoriasPostumas.jpg" alt="bw/MemoriasPostumas" class="avatar avatar--sm forum-avatar-img">bw/MemoriasPostumas</a>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <a href="#" class="nav-link nav-link--bottom">Configurações</a>
+    </aside>
+
+    <!-- FEED CENTRAL -->
+    <main class="feed">
+
+      <article class="post">
+        <div class="post-header">
+          <img src="img/NormalPeople.jpg" alt="bw/NormalPeople" class="avatar avatar--sm forum-avatar-img">
+          <span class="post-forum">bw/NormalPeople</span>
+          <span class="post-time">• há 4 dias</span>
+          <span class="spoiler-tag">!SPOILER!</span>
+        </div>
+        <h2 class="post-title">Povo besta</h2>
+        <p class="post-text">Não entendi o porquê deles esconderem o relacionamento no começo do livro</p>
+        <div class="post-media post-media--image">
+          <img src="img/post-quote.png" alt="Trecho do livro: Às vezes, o nosso vazio só se preenche com um pouco mais de nós mesmos." class="post-media-img">
+        </div>
+        <div class="post-actions">
+          <span class="vote vote--up"></span>
+          <span class="vote vote--down"></span>
+          <span class="vote vote--neutral"></span>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-header">
+          <img src="img/SenhorDosAneis.jpg" alt="bw/SenhorDosAneis" class="avatar avatar--sm forum-avatar-img">
+          <span class="post-forum">bw/SenhorDosAneis</span>
+          <span class="post-time">• há 6 dias</span>
+        </div>
+        <h2 class="post-title">Ordem cronológica dos livros</h2>
+        <p class="post-text">Aqui está um exemplo de como é a sequência dos livros de o Senhor dos Anéis</p>
+        <div class="post-media post-media--image">
+          <img src="img/sequencia_livro.jpg" alt="Ordem cronológica de leitura dos livros de O Senhor dos Anéis" class="post-media-img">
+        </div>
+        <div class="post-actions">
+          <span class="vote vote--up"></span>
+          <span class="vote vote--down"></span>
+          <span class="vote vote--neutral"></span>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- SIDEBAR DIREITA -->
+    <aside class="sidebar sidebar--right">
+      <div class="recent-box">
+        <h3 class="recent-title">Posts Recentes</h3>
+
+        <div class="recent-item">
+          <div class="recent-item-text">
+            <div class="recent-meta">
+              <img src="img/NormalPeople.jpg" alt="bw/NormalPeople" class="avatar avatar--sm forum-avatar-img">
+              <span class="post-forum post-forum--sm">bw/Normal...</span>
+              <span class="post-time post-time--sm">• há 4 dias</span>
+            </div>
+            <p class="recent-post-title">Povo besta</p>
+          </div>
+          <span class="avatar avatar--md"></span>
+        </div>
+
+        <hr class="divider divider--recent">
+
+        <div class="recent-item">
+          <div class="recent-item-text">
+            <div class="recent-meta">
+              <img src="img/SenhorDosAneis.jpg" alt="bw/SenhorDosAneis" class="avatar avatar--sm forum-avatar-img">
+              <span class="post-forum post-forum--sm">bw/Senhor...</span>
+              <span class="post-time post-time--sm">• há 6 dias</span>
+            </div>
+            <p class="recent-post-title">Ordem cronológica dos livros</p>
+          </div>
+          <span class="avatar avatar--md"></span>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

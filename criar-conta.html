@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookworms — Criar Conta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="index.html" class="topbar-logo-link">
+        <img src="img/logo.jpeg" alt="Bookworms" class="logo-img">
+        <span class="logo">Bookworms</span>
+      </a>
+    </div>
+    <div class="topbar-search">
+      <span class="avatar avatar--sm"></span>
+      <input type="text" class="search-input" placeholder="Procurar no BookWorms">
+    </div>
+    <div class="topbar-right">
+      <a href="#" class="btn-login">Login</a>
+      <a href="criar-conta.html" class="btn-criar-post">Fazer Conta</a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- SIDEBAR ESQUERDA (vazia antes do login) -->
+    <aside class="sidebar sidebar--left"></aside>
+
+    <!-- FEED CENTRAL: FORMULÁRIO DE CRIAÇÃO DE CONTA -->
+    <main class="feed feed--center">
+      <div class="form-card">
+        <h2 class="form-title">Criação de Conta</h2>
+
+        <div class="form-field form-field--center">
+          <label class="form-label">Nome de Usuário</label>
+          <input type="text" class="form-input">
+        </div>
+
+        <div class="form-field form-field--center">
+          <label class="form-label">E-mail</label>
+          <input type="email" class="form-input">
+        </div>
+
+        <div class="form-field form-field--center">
+          <label class="form-label">Senha</label>
+          <input type="password" class="form-input">
+        </div>
+
+        <div class="form-field form-field--center">
+          <label class="form-label">Confirmar Senha</label>
+          <input type="password" class="form-input">
+        </div>
+
+        <hr class="form-divider">
+
+        <button class="btn-criar-clube">Criar Conta</button>
+      </div>
+    </main>
+
+    <!-- SIDEBAR DIREITA (vazia antes do login) -->
+    <aside class="sidebar sidebar--right"></aside>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

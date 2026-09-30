@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookworms — Entrar em Clube</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="index.html" class="topbar-logo-link">
+        <img src="img/logo.jpeg" alt="Bookworms" class="logo-img">
+        <span class="logo">Bookworms</span>
+      </a>
+    </div>
+    <div class="topbar-search">
+      <span class="avatar avatar--sm"></span>
+      <input type="text" class="search-input" placeholder="Procurar no BookWorms">
+    </div>
+    <div class="topbar-right">
+      <button class="btn-criar-post">Criar Post</button>
+      <img src="img/avatar.jpg" alt="Perfil do usuário" class="avatar avatar--md profile-avatar-img">
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- SIDEBAR ESQUERDA -->
+    <aside class="sidebar sidebar--left">
+      <nav class="nav-group">
+        <a href="#" class="nav-link">Dar Apoio</a>
+        <a href="index.html" class="nav-link nav-link--strong">Página Inicial</a>
+        <a href="criar-clube.html" class="nav-link nav-link--strong">Criar Clube</a>
+        <a href="entrar-clube.html" class="nav-link nav-link--strong">Entrar em Clube</a>
+      </nav>
+
+      <hr class="divider">
+
+      <nav class="nav-group">
+        <a href="criar-registro.html" class="nav-link nav-link--strong">Criar Registro de Leitura</a>
+        <a href="#" class="nav-link nav-link--strong">Estatísticas</a>
+        <a href="metas.html" class="nav-link nav-link--strong">Metas</a>
+        <a href="testes.html" class="nav-link nav-link--strong">Testes</a>
+      </nav>
+
+      <hr class="divider">
+
+      <div class="nav-group">
+        <button class="nav-collapse" id="forunsToggle" aria-expanded="true" aria-controls="forunsList">
+          <span class="nav-link--strong">Fóruns</span>
+          <span class="chevron">⌄</span>
+        </button>
+        <div class="foruns-list" id="forunsList">
+          <a href="#" class="forum-link"><img src="img/NormalPeople.jpg" alt="bw/NormalPeople" class="avatar avatar--sm forum-avatar-img">bw/NormalPeople</a>
+          <a href="#" class="forum-link"><img src="img/SenhorDosAneis.jpg" alt="bw/SenhorDosAneis" class="avatar avatar--sm forum-avatar-img">bw/SenhorDosAneis</a>
+          <a href="#" class="forum-link"><img src="img/memoriasPostumas.jpg" alt="bw/MemoriasPostumas" class="avatar avatar--sm forum-avatar-img">bw/MemoriasPostumas</a>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <a href="#" class="nav-link nav-link--bottom">Configurações</a>
+    </aside>
+
+    <!-- FEED CENTRAL: ENTRAR EM CLUBES -->
+    <main class="feed feed--center">
+      <div class="form-card entrar-card">
+        <h2 class="form-title">Entrar em Clubes</h2>
+
+        <div class="form-field form-field--center">
+          <label class="form-label">Código de Clube</label>
+          <input type="text" class="form-input">
+        </div>
+
+        <button class="btn-criar-clube btn-entrar">Entrar</button>
+
+        <div class="or-divider">
+          <span></span>
+          <p>ou</p>
+          <span></span>
+        </div>
+
+        <h3 class="form-subtitle">Lista de Clubes Públicos</h3>
+        <button class="btn-criar-clube">Ver</button>
+      </div>
+    </main>
+
+    <!-- SIDEBAR DIREITA -->
+    <aside class="sidebar sidebar--right">
+      <div class="recent-box">
+        <h3 class="recent-title">Posts Recentes</h3>
+
+        <div class="recent-item">
+          <div class="recent-item-text">
+            <div class="recent-meta">
+              <img src="img/NormalPeople.jpg" alt="bw/NormalPeople" class="avatar avatar--sm forum-avatar-img">
+              <span class="post-forum post-forum--sm">bw/Normal...</span>
+              <span class="post-time post-time--sm">• há 4 dias</span>
+            </div>
+            <p class="recent-post-title">Povo besta</p>
+          </div>
+          <span class="avatar avatar--md"></span>
+        </div>
+
+        <hr class="divider divider--recent">
+
+        <div class="recent-item">
+          <div class="recent-item-text">
+            <div class="recent-meta">
+              <img src="img/SenhorDosAneis.jpg" alt="bw/SenhorDosAneis" class="avatar avatar--sm forum-avatar-img">
+              <span class="post-forum post-forum--sm">bw/Senhor...</span>
+              <span class="post-time post-time--sm">• há 6 dias</span>
+            </div>
+            <p class="recent-post-title">Ordem cronológica dos livros</p>
+          </div>
+          <span class="avatar avatar--md"></span>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
